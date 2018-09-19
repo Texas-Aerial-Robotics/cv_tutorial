@@ -14,6 +14,8 @@ You should already have OpenCV istalled from when you installed ROS. If you have
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 sudo apt-get install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get update
+sudo apt-get install sublime-text
 ```
 
 ## 3.) Clone this repo
@@ -106,7 +108,7 @@ b.) If a pixel gradient value is below the lower threshold, then it is rejected.
 c.) If the pixel gradient is between the two thresholds, then it will be accepted only if it is connected to a pixel that is above the upper threshold.
 ```
 
-finally ` cv::waitKey(30);` waits 30 ms for the gui to update.
+finally ` cv::waitKey(30); ` waits 30 ms for the gui to update.
 
 ## 5.) compiling 
 
@@ -147,6 +149,7 @@ WE DID IT!
 ## 7.) more reading
 
 canny explaination - https://docs.opencv.org/master/da/d5c/tutorial_canny_detector.html
+
 opencv tutorials - https://docs.opencv.org/master/d9/df8/tutorial_root.html
 
 
